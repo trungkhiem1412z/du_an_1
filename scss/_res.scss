@@ -1,0 +1,25 @@
+@import "mixins";
+
+// Brealpoint XS min width 0px
+@include MediaQuery($xs) {
+    // code
+}
+
+// Breakpoint SM min width 567px
+@include MediaQuery($sm) {
+    // code
+}
+
+// Breakpoint SM min width 768px
+@include MediaQuery($md) {
+    // code
+}
+
+// Breakpoint LG min width 992px
+@include MediaQuery($lg) {
+    // code
+}
+
+@include MediaQuery($xl) {
+    // code
+}
