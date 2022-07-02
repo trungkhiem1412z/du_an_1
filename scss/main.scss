@@ -3,3 +3,66 @@
 @import "res";
 
 // custom code
+
+// header
+.header {
+    .navbar {
+        .container-fluid {
+
+            .navbar-brand {
+                padding: 0;
+                margin: 0;
+            }
+
+            .navbar-collapse {
+                flex-grow: 0;
+            }
+
+            .navbar-right {
+                ul {
+                    gap: 0.8rem;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+// content
+.content {
+
+    // best sellers
+    .best-sellers {
+        .best-sellers-k {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+
+
+}
+
+// Min-width 768px
+@include media-breakpoint-up(md) {
+
+    .header {
+        .navbar {
+            .container-fluid {
+                .navbar-brand {
+                    margin-left: -5.5rem;
+                }
+            }
+        }
+    }
+
+    .content {
+        .best-sellers {
+            .best-sellers-k {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+
+}
