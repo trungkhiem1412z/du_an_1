@@ -102,23 +102,56 @@
         <!-- images carousel -->
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
+                <div class="carousel-item active" data-bs-interval="5000">
                     <img src="images/car_1.jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item" data-bs-interval="3000">
+                <div class="carousel-item" data-bs-interval="5000">
                     <img src="images/car_2.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Trước</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Sau</span>
             </button>
+        </div>
+
+        <!-- Tìm mẫu xe - Search -->
+        <div class="w-100 mt-2 p-2">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Chọn năm</option>
+                        <option value="1">2022</option>
+                        <option value="2">2021</option>
+                        <option value="3">2020</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Chọn hãng</option>
+                        <option value="1">Vinfast</option>
+                        <option value="2">BMW</option>
+                        <option value="3">Honda</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Chọn mẫu</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <button type="button" class="btn btn-success w-100">Tìm kiếm <i class="bi bi-search"></i></button>
+                </div>
+            </div>
         </div>
 
     </div>
