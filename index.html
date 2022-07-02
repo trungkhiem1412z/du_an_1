@@ -70,10 +70,26 @@
                             <a class="nav-link fs-4" href="#"><i class="bi bi-person"></i></a>
                         </li>
                         <li class="nav-item d-none d-md-block">
-                            <a class="nav-link fs-4" href="#"><i class="bi bi-suit-heart"></i></a>
+                            <a class="nav-link fs-4" href="#">
+                                <i class="bi bi-suit-heart position-relative">
+                                    <span
+                                        class="position-absolute bottom-0 start-100 translate-middle badge rounded-pill bg-black"
+                                        style="font-size: 10px; font-weight: 100;">
+                                        2
+                                    </span>
+                                </i>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4" href="#"><i class="bi bi-cart"></i></a>
+                            <a class="nav-link fs-4" href="#">
+                                <i class="bi bi-cart position-relative">
+                                    <span
+                                        class="position-absolute bottom-0 start-100 translate-middle badge rounded-pill bg-black"
+                                        style="font-size: 10px; font-weight: 100;">
+                                        1
+                                    </span>
+                                </i>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -81,7 +97,29 @@
         </nav>
     </header>
 
-    <div class="container-fluid content">
+    <div class="container-fluid p-0 content">
+
+        <!-- images carousel -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="images/car_1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/car_2.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
     </div>
 
