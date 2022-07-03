@@ -12144,3 +12144,19 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #181E23;
 }
+.footer .title-col {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.footer .item-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer .item-col a {
+  text-decoration: none;
+  color: #6F777C;
+  font-weight: 600;
+}
+.footer .item-col a:hover {
+  color: #fff;
+}
