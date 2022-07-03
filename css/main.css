@@ -12025,3 +12025,8 @@ textarea.form-control-lg {
   top: 60px;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .content .best-collection .content .box {
+    text-align: center;
+  }
+}
