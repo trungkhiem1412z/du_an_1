@@ -12055,7 +12055,7 @@ textarea.form-control-lg {
   margin-top: 0.7rem;
   font-weight: 600;
 }
-.content .best-sellers .tabs-k .tab-content .tab-pane .row .box-item:hover::before {
+.content .best-sellers .tabs-k .tab-content .tab-pane .row .box-item:hover ::before {
   content: "";
   background-color: #27ba7a;
   width: 100%;
@@ -12068,6 +12068,19 @@ textarea.form-control-lg {
   z-index: 1;
   border-radius: 1rem;
   transition: all 0.3s ease-in-out;
+}
+.content .best-sellers .tabs-k .tab-content .tab-pane .row .box-item:hover .hover {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+}
+.content .best-sellers .tabs-k .tab-content .tab-pane .row .box-item:hover .hover .btn {
+  background-color: #27ba7a;
+  color: #fff;
 }
 @media (min-width: 768px) {
   .content .best-sellers .best-sellers-k {
