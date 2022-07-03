@@ -11980,7 +11980,6 @@ textarea.form-control-lg {
   text-align: center;
 }
 .content .best-collection .title-top div h4, .content .best-collection .title-top div .h4 {
-  font-size: 1rem;
   color: #46BE7E;
 }
 .content .best-collection .title-top div h2, .content .best-collection .title-top div .h2 {
@@ -12048,4 +12047,100 @@ textarea.form-control-lg {
 }
 .content .slick-app .item:hover a {
   display: block;
+}
+.content .banner {
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.content .banner div {
+  text-align: center;
+}
+.content .banner div img {
+  width: 80%;
+  border-radius: 1.5rem;
+}
+@media (min-width: 768px) {
+  .content .banner {
+    flex-direction: row;
+  }
+}
+.content .blog-news {
+  margin-top: 1rem;
+}
+.content .blog-news .title-header {
+  text-align: center;
+}
+.content .blog-news .title-header h4, .content .blog-news .title-header .h4,
+.content .blog-news .title-header h2,
+.content .blog-news .title-header .h2 {
+  text-transform: uppercase;
+}
+.content .blog-news .title-header h4, .content .blog-news .title-header .h4 {
+  color: #27ba7a;
+}
+.content .blog-news .title-header h2, .content .blog-news .title-header .h2 {
+  font-weight: bold;
+}
+.content .blog-news .blog-post {
+  justify-content: space-evenly;
+}
+.content .subscrible {
+  margin-top: 1rem;
+}
+.content .subscrible .test {
+  flex-direction: column;
+}
+.content .subscrible img {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+.content .subscrible .btn-k {
+  background-color: #46BE7E;
+  border-radius: 1.3rem;
+  width: 350px;
+}
+.content .subscrible .btn-k ::-moz-placeholder {
+  color: #fff;
+}
+.content .subscrible .btn-k :-ms-input-placeholder {
+  color: #fff;
+}
+.content .subscrible .btn-k ::placeholder {
+  color: #fff;
+}
+.content .subscrible .btn-k input[type=email]:focus {
+  outline: none;
+  border: none;
+}
+.content .subscrible .btn-k input[type=email] {
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background-color: #46BE7E;
+  border-radius: 1.3rem;
+}
+.content .subscrible .btn-k .btn {
+  color: #fff;
+}
+.content .subscrible .btn-k .btn:focus {
+  outline: none;
+  border: none;
+}
+.content .subscrible .btn-k .btn:hover {
+  border: none;
+  outline: none;
+}
+@media (min-width: 768px) {
+  .content .subscrible .test {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .content .subscrible img {
+    width: 70%;
+  }
+}
+.footer {
+  color: #fff;
+  background-color: #181E23;
 }
