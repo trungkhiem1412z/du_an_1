@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".test-app").slick({
+    $(".slick-app").slick({
         dots: true,
         infinite: false,
         speed: 300,

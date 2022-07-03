@@ -12030,3 +12030,22 @@ textarea.form-control-lg {
     text-align: center;
   }
 }
+.content .slick-app {
+  margin-top: 1rem;
+}
+.content .slick-app .item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-left: 1px solid #000;
+}
+.content .slick-app .item img {
+  width: 50%;
+  margin: auto;
+}
+.content .slick-app .item a {
+  display: none;
+}
+.content .slick-app .item:hover a {
+  display: block;
+}
