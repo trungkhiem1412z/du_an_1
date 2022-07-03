@@ -38,8 +38,8 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Navbar left -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- test -->
+                <div class="collapse navbar-collapse navbar-collapse-1">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
@@ -95,6 +95,26 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Navbar menu -->
+                <div class="collapse navbar-collapse navbar-collapse-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cửa Hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sản Phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Page</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -124,13 +144,13 @@
         </div>
 
         <!-- Tìm mẫu xe - Search -->
-        <div class="w-100 p-3 bg-success">
+        <div class="search w-100 p-3 bg-success">
             <div class="text-center text-white mb-3">
                 <h4 class="fs-4">WIDE SELECTION OF AUTO PARTS</h4>
                 <h2 class="fs-2">LOWEST PRICES!</h2>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3 box">
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Chọn năm</option>
                         <option value="1">2022</option>
@@ -138,7 +158,7 @@
                         <option value="3">2020</option>
                     </select>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3 box">
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Chọn hãng</option>
                         <option value="1">Vinfast</option>
@@ -146,7 +166,7 @@
                         <option value="3">Honda</option>
                     </select>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3 box">
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Chọn mẫu</option>
                         <option value="1">1</option>
@@ -162,54 +182,54 @@
         </div>
 
         <!-- Đặc điểm xe -->
-        <div class="w-100 p-3 text-center">
+        <div class="car-ed w-100 p-3 text-center">
             <h4>CAR FEATURES</h4>
             <h2>AWESOME PRODUCTS</h2>
             <div class="row">
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3 box-item">
                     <div class="card text-start">
                         <img class="p-3 mx-auto" src="images/car-icon.png">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
+                            <h5 class="card-title">Explore the best <br> car products</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                             <a href="#" class="btn btn-primary">Mua ngay</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3 box-item">
                     <div class="card text-start">
                         <img class="p-3 mx-auto" src="images/meter-icon.png" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
+                            <h5 class="card-title">Discover first class <br> performance kit</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                             <a href="#" class="btn btn-primary">Mua ngay</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3 box-item">
                     <div class="card text-start">
                         <img class="p-3 mx-auto" src="images/accessories-icon.png" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
+                            <h5 class="card-title">Get accessories for <br> all cars</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                             <a href="#" class="btn btn-primary">Mua ngay</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3 box-item">
                     <div class="card text-start">
                         <img class="p-3 mx-auto" src="images/wheel-icon.png" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
+                            <h5 class="card-title">Number one quality</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                             <a href="#" class="btn btn-primary">Mua ngay</a>
                         </div>
                     </div>
@@ -249,9 +269,14 @@
                         aria-labelledby="v-pills-home-tab" tabindex="0">
                         <!-- Hiện ra 3 sản phẩm -->
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 box-item">
+                                <div class="hover">
+                                    <a class="btn" href="#">
+                                        Thêm vào giỏ hàng
+                                    </a>
+                                </div>
                                 <div class="thumnail-sp">
-                                    <img src="images/den-bi-xenon4.jpg" width="100%" alt="">
+                                    <img src="images/den-bi-xenon4.jpg" width="80%" alt="">
                                 </div>
                                 <div class="name-sp">Đèn ô tô</div>
                                 <div class="price-sp">1.300.000 VNĐ</div>
@@ -264,9 +289,9 @@
                                     (4)
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 box-item">
                                 <div class="thumnail-sp">
-                                    <img src="images/den-bi-xenon4.jpg" width="100%" alt="">
+                                    <img src="images/den-bi-xenon4.jpg" width="80%" alt="">
                                 </div>
                                 <div class="name-sp">Đèn ô tô</div>
                                 <div class="price-sp">1.300.000 VNĐ</div>
@@ -279,9 +304,9 @@
                                     (4)
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 box-item">
                                 <div class="thumnail-sp">
-                                    <img src="images/den-bi-xenon4.jpg" width="100%" alt="">
+                                    <img src="images/den-bi-xenon4.jpg" width="80%" alt="">
                                 </div>
                                 <div class="name-sp">Đèn ô tô</div>
                                 <div class="price-sp">1.300.000 VNĐ</div>
@@ -300,9 +325,9 @@
                         aria-labelledby="v-pills-profile-tab" tabindex="0">
                         <!-- Hiện ra 3 sản phẩm -->
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 box-item">
                                 <div class="thumnail-sp">
-                                    <img src="images/den-bi-xenon4.jpg" width="100%" alt="">
+                                    <img src="images/den-bi-xenon4.jpg" width="80%" alt="">
                                 </div>
                                 <div class="name-sp">Đèn ô tô</div>
                                 <div class="price-sp">1.300.000 VNĐ</div>
@@ -315,9 +340,9 @@
                                     (4)
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 box-item">
                                 <div class="thumnail-sp">
-                                    <img src="images/den-bi-xenon4.jpg" width="100%" alt="">
+                                    <img src="images/den-bi-xenon4.jpg" width="80%" alt="">
                                 </div>
                                 <div class="name-sp">Đèn ô tô</div>
                                 <div class="price-sp">1.300.000 VNĐ</div>
@@ -330,9 +355,9 @@
                                     (4)
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 box-item">
                                 <div class="thumnail-sp">
-                                    <img src="images/den-bi-xenon4.jpg" width="100%" alt="">
+                                    <img src="images/den-bi-xenon4.jpg" width="80%" alt="">
                                 </div>
                                 <div class="name-sp">Đèn ô tô</div>
                                 <div class="price-sp">1.300.000 VNĐ</div>
@@ -351,9 +376,9 @@
                         aria-labelledby="v-pills-messages-tab" tabindex="0">
                         <!-- Hiện ra 3 sản phẩm -->
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 box-item">
                                 <div class="thumnail-sp">
-                                    <img src="images/den-bi-xenon4.jpg" width="100%" alt="">
+                                    <img src="images/den-bi-xenon4.jpg" width="80%" alt="">
                                 </div>
                                 <div class="name-sp">Đèn ô tô</div>
                                 <div class="price-sp">1.300.000 VNĐ</div>
@@ -366,9 +391,9 @@
                                     (4)
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 box-item">
                                 <div class="thumnail-sp">
-                                    <img src="images/den-bi-xenon4.jpg" width="100%" alt="">
+                                    <img src="images/den-bi-xenon4.jpg" width="80%" alt="">
                                 </div>
                                 <div class="name-sp">Đèn ô tô</div>
                                 <div class="price-sp">1.300.000 VNĐ</div>
@@ -381,9 +406,9 @@
                                     (4)
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 box-item">
                                 <div class="thumnail-sp">
-                                    <img src="images/den-bi-xenon4.jpg" width="100%" alt="">
+                                    <img src="images/den-bi-xenon4.jpg" width="80%" alt="">
                                 </div>
                                 <div class="name-sp">Đèn ô tô</div>
                                 <div class="price-sp">1.300.000 VNĐ</div>
@@ -402,9 +427,9 @@
                         aria-labelledby="v-pills-settings-tab" tabindex="0">
                         <!-- Hiện ra 3 sản phẩm -->
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 box-item">
                                 <div class="thumnail-sp">
-                                    <img src="images/den-bi-xenon4.jpg" width="100%" alt="">
+                                    <img src="images/den-bi-xenon4.jpg" width="80%" alt="">
                                 </div>
                                 <div class="name-sp">Đèn ô tô</div>
                                 <div class="price-sp">1.300.000 VNĐ</div>
@@ -417,9 +442,9 @@
                                     (4)
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 box-item">
                                 <div class="thumnail-sp">
-                                    <img src="images/den-bi-xenon4.jpg" width="100%" alt="">
+                                    <img src="images/den-bi-xenon4.jpg" width="80%" alt="">
                                 </div>
                                 <div class="name-sp">Đèn ô tô</div>
                                 <div class="price-sp">1.300.000 VNĐ</div>
@@ -432,9 +457,9 @@
                                     (4)
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 box-item">
                                 <div class="thumnail-sp">
-                                    <img src="images/den-bi-xenon4.jpg" width="100%" alt="">
+                                    <img src="images/den-bi-xenon4.jpg" width="80%" alt="">
                                 </div>
                                 <div class="name-sp">Đèn ô tô</div>
                                 <div class="price-sp">1.300.000 VNĐ</div>

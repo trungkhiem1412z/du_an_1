@@ -11907,10 +11907,17 @@ textarea.form-control-lg {
 }
 .header .navbar .container-fluid .navbar-brand, .header .navbar .container-sm .navbar-brand, .header .navbar .container-md .navbar-brand, .header .navbar .container-lg .navbar-brand, .header .navbar .container-xl .navbar-brand, .header .navbar .container-xxl .navbar-brand {
   padding: 0;
-  margin: 0;
+  margin-right: 0 !important;
 }
 .header .navbar .container-fluid .navbar-collapse, .header .navbar .container-sm .navbar-collapse, .header .navbar .container-md .navbar-collapse, .header .navbar .container-lg .navbar-collapse, .header .navbar .container-xl .navbar-collapse, .header .navbar .container-xxl .navbar-collapse {
   flex-grow: 0;
+}
+.header .navbar .container-fluid .navbar-collapse-1, .header .navbar .container-sm .navbar-collapse-1, .header .navbar .container-md .navbar-collapse-1, .header .navbar .container-lg .navbar-collapse-1, .header .navbar .container-xl .navbar-collapse-1, .header .navbar .container-xxl .navbar-collapse-1 {
+  display: none;
+}
+.header .navbar .container-fluid .navbar-toggler, .header .navbar .container-sm .navbar-toggler, .header .navbar .container-md .navbar-toggler, .header .navbar .container-lg .navbar-toggler, .header .navbar .container-xl .navbar-toggler, .header .navbar .container-xxl .navbar-toggler {
+  box-shadow: none;
+  border: none;
 }
 .header .navbar .container-fluid .navbar-right, .header .navbar .container-sm .navbar-right, .header .navbar .container-md .navbar-right, .header .navbar .container-lg .navbar-right, .header .navbar .container-xl .navbar-right, .header .navbar .container-xxl .navbar-right {
   margin-right: 10px;
@@ -11919,15 +11926,83 @@ textarea.form-control-lg {
   gap: 0.8rem;
   flex-direction: row;
 }
+@media (min-width: 576px) {
+  .header .navbar .container-fluid .navbar-brand, .header .navbar .container-sm .navbar-brand, .header .navbar .container-md .navbar-brand, .header .navbar .container-lg .navbar-brand, .header .navbar .container-xl .navbar-brand, .header .navbar .container-xxl .navbar-brand {
+    margin-right: 0 !important;
+  }
+}
 @media (min-width: 768px) {
   .header .navbar .container-fluid .navbar-brand, .header .navbar .container-sm .navbar-brand, .header .navbar .container-md .navbar-brand, .header .navbar .container-lg .navbar-brand, .header .navbar .container-xl .navbar-brand, .header .navbar .container-xxl .navbar-brand {
-    margin-left: -5.8rem;
+    margin-left: -5rem;
   }
   .header .navbar .container-fluid .navbar-right, .header .navbar .container-sm .navbar-right, .header .navbar .container-md .navbar-right, .header .navbar .container-lg .navbar-right, .header .navbar .container-xl .navbar-right, .header .navbar .container-xxl .navbar-right {
     margin-right: 0;
   }
+  .header .navbar .container-fluid .navbar-collapse-1, .header .navbar .container-sm .navbar-collapse-1, .header .navbar .container-md .navbar-collapse-1, .header .navbar .container-lg .navbar-collapse-1, .header .navbar .container-xl .navbar-collapse-1, .header .navbar .container-xxl .navbar-collapse-1 {
+    display: block;
+  }
+  .header .navbar .container-fluid .navbar-collapse-2, .header .navbar .container-sm .navbar-collapse-2, .header .navbar .container-md .navbar-collapse-2, .header .navbar .container-lg .navbar-collapse-2, .header .navbar .container-xl .navbar-collapse-2, .header .navbar .container-xxl .navbar-collapse-2 {
+    display: none !important;
+  }
 }
 
+.content .carousel {
+  margin-top: 65.0667px;
+}
+.content .search .row .box .form-select {
+  margin-bottom: 0.7rem;
+  box-shadow: none;
+}
+.content .search .row .btn {
+  box-shadow: none;
+}
+@media (min-width: 768px) {
+  .content .search .row .box {
+    margin-bottom: 0;
+  }
+}
+.content .car-ed .row .box-item {
+  margin-bottom: 1rem;
+}
+.content .car-ed .row .box-item .card {
+  transition: all 0.5s ease-in-out;
+}
+.content .car-ed .row .box-item .card:hover {
+  background-color: #1a2126;
+  border: #1a2126;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.content .car-ed .row .box-item .card:hover .card-body a {
+  color: #fff;
+}
+.content .car-ed .row .box-item .card:hover .card-body a:before {
+  border-top: 2px solid #27ba7a;
+}
+.content .car-ed .row .box-item .card-body .card-title {
+  font-weight: 600;
+}
+.content .car-ed .row .box-item .card-body a.btn {
+  color: #000;
+  border: none;
+  background: none;
+}
+.content .car-ed .row .box-item .card-body a:before {
+  content: "";
+  border-top: 2px solid #e8e8e9;
+  display: block;
+  padding-top: 30px;
+  margin-top: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.content .car-ed .row .box-item .card-body a.btn:focus {
+  box-shadow: none;
+}
+@media (min-width: 768px) {
+  .content .car-ed {
+    margin-bottom: 0;
+  }
+}
 .content .best-sellers {
   background: url("../images/bg-ptrn1.png");
 }
@@ -11948,6 +12023,51 @@ textarea.form-control-lg {
   margin-bottom: 1rem;
   width: 100%;
   justify-content: space-evenly;
+}
+.content .best-sellers .tabs-k .nav-pills-k .nav-link {
+  color: #27ba7a;
+}
+.content .best-sellers .tabs-k .nav-pills-k .nav-link.active {
+  background-color: #27ba7a;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.content .best-sellers .tabs-k .tab-content .tab-pane .row {
+  justify-content: space-evenly;
+}
+.content .best-sellers .tabs-k .tab-content .tab-pane .row .box-item {
+  background-color: #fff;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 20px 0;
+  width: 32%;
+  position: relative;
+}
+.content .best-sellers .tabs-k .tab-content .tab-pane .row .box-item .hover {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.content .best-sellers .tabs-k .tab-content .tab-pane .row .box-item .name-sp {
+  margin-top: 0.7rem;
+  font-weight: 600;
+}
+.content .best-sellers .tabs-k .tab-content .tab-pane .row .box-item:hover::before {
+  content: "";
+  background-color: #27ba7a;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
   .content .best-sellers .best-sellers-k {

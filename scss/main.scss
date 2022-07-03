@@ -11,11 +11,21 @@
 
             .navbar-brand {
                 padding: 0;
-                margin: 0;
+                margin-right: 0 !important;
             }
 
             .navbar-collapse {
                 flex-grow: 0;
+            }
+
+            .navbar-collapse-1 {
+                display: none;
+            }
+
+            // chỉnh đường viên navbar-toggler
+            .navbar-toggler {
+                box-shadow: none;
+                border: none;
             }
 
             .navbar-right {
@@ -26,26 +36,128 @@
                     flex-direction: row;
                 }
             }
-        }
-    }
 
-    @include media-breakpoint-up(md) {
-        .navbar {
-            .container-fluid {
+            // res container-fluid
+            @include media-breakpoint-up(sm) {
                 .navbar-brand {
-                    margin-left: -5.8rem;
+                    margin-right: 0 !important;
+                }
+            }
+
+            @include media-breakpoint-up(md) {
+
+                .navbar-brand {
+                    margin-left: -5rem;
                 }
 
                 .navbar-right {
                     margin-right: 0;
+                }
+
+                .navbar-collapse-1 {
+                    display: block;
+                }
+
+                .navbar-collapse-2 {
+                    display: none !important;
                 }
             }
         }
     }
 }
 
+
+
+
 // content
 .content {
+
+    // carousel
+    .carousel {
+        // khoảng cách top với header
+        margin-top: 65.0667px;
+    }
+
+    // search
+    .search {
+        .row {
+            .box {
+                .form-select {
+                    margin-bottom: 0.7rem;
+                    box-shadow: none;
+                }
+            }
+
+            .btn {
+                box-shadow: none;
+            }
+
+            @include media-breakpoint-up(md) {
+                .box {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    // Đặc điểm xe
+    .car-ed {
+        .row {
+            .box-item {
+                margin-bottom: 1rem;
+
+                .card {
+                    transition: all 0.5s ease-in-out;
+
+                    &:hover {
+                        background-color: #1a2126;
+                        border: #1a2126;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                        color: #fff;
+
+                        .card-body {
+                            a {
+                                color: #fff;
+                            }
+
+                            a:before {
+                                border-top: 2px solid #27ba7a;
+                            }
+                        }
+                    }
+                }
+
+                .card-body {
+                    .card-title {
+                        font-weight: 600;
+                    }
+
+                    a.btn {
+                        color: #000;
+                        border: none;
+                        background: none;
+                    }
+
+                    a:before {
+                        content: '';
+                        border-top: 2px solid #e8e8e9;
+                        display: block;
+                        padding-top: 30px;
+                        margin-top: 10px;
+                        transition: all 0.5s ease-in-out;
+                    }
+
+                    a.btn:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+        }
+    }
 
     // best sellers
     .best-sellers {
@@ -70,6 +182,62 @@
                 margin-bottom: 1rem;
                 width: 100%;
                 justify-content: space-evenly;
+
+                .nav-link {
+                    color: #27ba7a;
+                }
+
+                .nav-link.active {
+                    background-color: #27ba7a;
+                    color: #fff;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+
+            .tab-content {
+                .tab-pane {
+                    .row {
+                        justify-content: space-evenly;
+
+                        .box-item {
+                            background-color: #fff;
+                            border-radius: 1rem;
+                            text-align: center;
+                            padding: 20px 0;
+                            width: 32%;
+                            position: relative;
+
+                            .hover {
+                                opacity: 0;
+                                visibility: hidden;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+
+                            .name-sp {
+                                margin-top: 0.7rem;
+                                font-weight: 600;
+                            }
+                        }
+
+                        .box-item:hover::before {
+                            content: '';
+                            background-color: #27ba7a;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            opacity: 0;
+                            visibility: hidden;
+                            z-index: 1;
+                            border-radius: 1rem;
+                            transition: all .3s ease-in-out;
+                        }
+                    }
+                }
             }
         }
 
