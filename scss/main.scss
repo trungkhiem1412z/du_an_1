@@ -113,7 +113,6 @@
 
             div {
                 h4 {
-                    font-size: 1rem;
                     color: #46BE7E;
                 }
 
@@ -207,4 +206,124 @@
             }
         }
     }
+
+    // banner
+    .banner {
+        flex-direction: column;
+        margin-top: 1rem;
+
+        div {
+            text-align: center;
+
+            img {
+                width: 80%;
+                border-radius: 1.5rem;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+        }
+    }
+
+    // blog news
+    .blog-news {
+        margin-top: 1rem;
+
+        .title-header {
+
+            text-align: center;
+
+            h4,
+            h2 {
+                text-transform: uppercase;
+            }
+
+            h4 {
+                color: #27ba7a;
+            }
+
+            h2 {
+                font-weight: bold;
+            }
+        }
+
+        .blog-post {
+            justify-content: space-evenly;
+        }
+    }
+
+    // subscribe
+    .subscrible {
+        margin-top: 1rem;
+
+        .test {
+            flex-direction: column;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 1.5rem;
+        }
+
+        .btn-k {
+            background-color: #46BE7E;
+            border-radius: 1.3rem;
+            width: 350px;
+
+            ::placeholder {
+                color: #fff;
+            }
+
+            input[type=email]:focus {
+                outline: none;
+                border: none;
+            }
+
+            input[type=email] {
+                border: none;
+                outline: none;
+                padding: 1rem 1.5rem;
+                color: #fff;
+                background-color: #46BE7E;
+                border-radius: 1.3rem;
+            }
+
+            .btn {
+                color: #fff;
+            }
+
+            .btn:focus {
+                outline: none;
+                border: none;
+            }
+
+            .btn:hover {
+                border: none;
+                outline: none;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            .test {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+    // support
+    .support {}
+
+}
+
+// footer
+.footer {
+    color: #fff;
+    background-color: #181E23;
+
 }
