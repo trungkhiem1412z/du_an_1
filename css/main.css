@@ -11975,6 +11975,7 @@ textarea.form-control-lg {
 }
 .content .car-ed .row .box-item .card:hover .card-body a {
   color: #fff;
+  text-transform: uppercase;
 }
 .content .car-ed .row .box-item .card:hover .card-body a:before {
   border-top: 2px solid #27ba7a;
@@ -12124,22 +12125,47 @@ textarea.form-control-lg {
 .content .best-collection .content .text-end {
   text-align: right !important;
 }
-.content .best-collection .content .detail {
+.content .best-collection .content .box .box-1 {
+  margin-bottom: 1rem;
+}
+.content .best-collection .content .box .box-1 .detail {
+  top: 60px;
+  right: 50px;
+  text-align: center;
+}
+.content .best-collection .content .box .box-2 .detail {
+  left: 40px;
+  bottom: 60px;
+  text-align: center;
+}
+.content .best-collection .content .box .box-1 .detail,
+.content .best-collection .content .box .box-2 .detail {
   background: url("../images/bg-ptrn2.png") no-repeat #27ba7a;
   padding: 30px 30px 45px;
+  display: inline-block;
 }
-.content .best-collection .content .detail h2, .content .best-collection .content .detail .h2 {
+.content .best-collection .content .box .box-1 .detail h2, .content .best-collection .content .box .box-1 .detail .h2,
+.content .best-collection .content .box .box-2 .detail h2,
+.content .best-collection .content .box .box-2 .detail .h2 {
   text-transform: uppercase;
   color: #fff;
+  font-size: 38px;
 }
-.content .best-collection .content .detail .link {
+.content .best-collection .content .box .box-1 .detail .link,
+.content .best-collection .content .box .box-2 .detail .link {
   text-decoration: none;
   color: #000;
   position: relative;
   font-weight: 600;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
 }
-.content .best-collection .content .detail .link:after {
+.content .best-collection .content .box .box-1 .detail .link:hover,
+.content .best-collection .content .box .box-2 .detail .link:hover {
+  color: #fff;
+}
+.content .best-collection .content .box .box-1 .detail .link:after,
+.content .best-collection .content .box .box-2 .detail .link:after {
   content: "";
   height: 2px;
   width: 100%;
@@ -12149,17 +12175,30 @@ textarea.form-control-lg {
   position: absolute;
   display: block;
 }
-.content .best-collection .content .detail-1 {
-  top: 60px;
-  text-align: center;
-}
-.content .best-collection .content .detail-2 {
-  top: 60px;
-  text-align: center;
-}
 @media (min-width: 768px) {
   .content .best-collection .content .box {
     text-align: center;
+    justify-content: space-around;
+  }
+  .content .best-collection .content .box .box-1 img,
+.content .best-collection .content .box .box-2 img {
+    width: 100%;
+  }
+  .content .best-collection .content .box .box-1 {
+    margin-bottom: 0;
+  }
+  .content .best-collection .content .box .box-2 .detail {
+    left: 40px;
+    bottom: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .content .best-collection .content .box {
+    justify-content: space-evenly;
+  }
+  .content .best-collection .content .box .box-1 img,
+.content .best-collection .content .box .box-2 img {
+    width: 80%;
   }
 }
 .content .slick-app {
@@ -12169,17 +12208,41 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   text-align: center;
-  border-left: 1px solid #000;
+  border-right: 1px solid #e5e6e6;
+  padding: 100px 0;
+  position: relative;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(229, 229, 229) 100%);
 }
 .content .slick-app .item img {
   width: 50%;
+  opacity: 0.25;
   margin: auto;
+  transition: all 0.5s ease 0s;
+  margin-bottom: 30px;
+}
+.content .slick-app .item span {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
 }
 .content .slick-app .item a {
   display: none;
+  color: #fff;
+  background-color: #16b26e;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  width: 150px;
+  margin: 0 auto;
+  text-transform: uppercase;
 }
 .content .slick-app .item:hover a {
   display: block;
+}
+.content .slick-app .item:hover img {
+  opacity: 1;
 }
 .content .banner {
   flex-direction: column;
