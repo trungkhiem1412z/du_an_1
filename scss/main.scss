@@ -1,8 +1,6 @@
 // import boostrap
-@import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-// custom code
+@import "variables";
 
 // header
 .header {
@@ -571,23 +569,26 @@
             justify-content: space-evenly;
 
             .card {
-                .card-body-k {
-                    a {
-                        text-decoration: none;
+                a {
+                    color: black;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #16b26e;
                     }
+                }
 
-                    .card-body-title {
-                        font-size: 2rem !important;
-
-                        a {
-                            color: red !important;
-                        }
-                    }
-
+                .card-body {
                     .card-body-info {
+                        border-top: 1px solid #e5e6e6;
+                        padding-top: 15px;
+
                         .author {
                             a {
                                 color: #16b26e !important;
+                                font-size: 0.8rem !important;
                             }
                         }
                     }

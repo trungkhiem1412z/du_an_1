@@ -12321,17 +12321,22 @@ textarea.form-control-lg {
 .content .blog-news .blog-post {
   justify-content: space-evenly;
 }
-.content .blog-news .blog-post .card .card-body-k a {
+.content .blog-news .blog-post .card a {
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
   text-decoration: none;
 }
-.content .blog-news .blog-post .card .card-body-k .card-body-title {
-  font-size: 2rem !important;
+.content .blog-news .blog-post .card a:hover {
+  color: #16b26e;
 }
-.content .blog-news .blog-post .card .card-body-k .card-body-title a {
-  color: red !important;
+.content .blog-news .blog-post .card .card-body .card-body-info {
+  border-top: 1px solid #e5e6e6;
+  padding-top: 15px;
 }
-.content .blog-news .blog-post .card .card-body-k .card-body-info .author a {
+.content .blog-news .blog-post .card .card-body .card-body-info .author a {
   color: #16b26e !important;
+  font-size: 0.8rem !important;
 }
 .content .subscrible {
   margin-top: 1rem;
