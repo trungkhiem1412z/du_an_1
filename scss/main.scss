@@ -1,6 +1,6 @@
 // import boostrap
+@import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import "res";
 
 // custom code
 
@@ -420,7 +420,7 @@
 
     // slick-slide
     .slick-app {
-        margin-top: 1rem;
+        margin: 1rem 0;
 
         .item {
             display: flex;
@@ -471,6 +471,60 @@
         }
     }
 
+    // best collection
+    .featured-products {
+        margin-bottom: 1rem;
+
+        &-title {
+            h2 {
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+        .row {
+            justify-content: space-evenly;
+
+            .box-item {
+                background-color: #f8f8f8;
+                border-radius: 0.5rem;
+                padding: 20px 15px;
+                text-align: center;
+                width: 47%;
+                margin-bottom: 0.8rem;
+
+                img {
+                    width: 85%;
+                }
+
+                img {
+                    width: 100%;
+                    margin-bottom: 0.7rem;
+                }
+
+                .name-sp {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            .row {
+                width: 100%;
+                justify-content: space-evenly;
+
+                .box-item {
+                    width: 22%;
+                    margin-bottom: 0;
+
+                    img {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+
     // banner
     .banner {
         flex-direction: column;
@@ -512,8 +566,33 @@
             }
         }
 
+        // Blog post
         .blog-post {
             justify-content: space-evenly;
+
+            .card {
+                .card-body-k {
+                    a {
+                        text-decoration: none;
+                    }
+
+                    .card-body-title {
+                        font-size: 2rem !important;
+
+                        a {
+                            color: red !important;
+                        }
+                    }
+
+                    .card-body-info {
+                        .author {
+                            a {
+                                color: #16b26e !important;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
