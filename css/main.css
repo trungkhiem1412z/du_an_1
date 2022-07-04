@@ -12366,14 +12366,16 @@ textarea.form-control-lg {
 .content .subscrible .test {
   flex-direction: column;
 }
-.content .subscrible img {
+.content .subscrible .test .thumb-img img {
   width: 100%;
   border-radius: 1.5rem;
 }
 .content .subscrible .btn-k {
   background-color: #46BE7E;
   border-radius: 1.3rem;
-  width: 350px;
+  border: 1px solid #46BE7E;
+  display: flex;
+  flex-direction: row;
 }
 .content .subscrible .btn-k ::-moz-placeholder {
   color: #fff;
@@ -12391,29 +12393,79 @@ textarea.form-control-lg {
 .content .subscrible .btn-k input[type=email] {
   border: none;
   outline: none;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0.5rem 1rem 1rem;
   color: #fff;
   background-color: #46BE7E;
   border-radius: 1.3rem;
 }
 .content .subscrible .btn-k .btn {
   color: #fff;
-}
-.content .subscrible .btn-k .btn:focus {
-  outline: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
   border: none;
+  border-top-right-radius: 1.3rem;
+  border-bottom-right-radius: 1.3rem;
+  transition: all 0.5s ease-in-out;
 }
 .content .subscrible .btn-k .btn:hover {
   border: none;
   outline: none;
+  color: #46BE7E;
+  background-color: #fff;
+}
+@media (min-width: 576px) {
+  .content .subscrible .test .thumb-img {
+    display: none;
+  }
+  .content .subscrible .test .sub-content {
+    text-align: center;
+  }
+  .content .subscrible .test .sub-content .btn-k {
+    width: 356px;
+  }
 }
 @media (min-width: 768px) {
   .content .subscrible .test {
     flex-direction: row;
     justify-content: center;
   }
-  .content .subscrible img {
+  .content .subscrible .test .thumb-img {
+    text-align: center;
+    display: block;
+  }
+  .content .subscrible .test .thumb-img img {
+    width: 90%;
+  }
+  .content .subscrible .test .btn-k {
+    width: 356px;
+    position: relative;
+  }
+  .content .subscrible .test .btn-k input[type=email] {
+    width: 249.367px;
+  }
+  .content .subscrible .test .sub-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .content .subscrible .test .sub-content h2, .content .subscrible .test .sub-content .h2 {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .content .subscrible .test {
     width: 70%;
+    margin: auto;
+  }
+  .content .subscrible .test .sub-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .content .subscrible .test .sub-content h2, .content .subscrible .test .sub-content .h2 {
+    margin-bottom: 0;
   }
 }
 .footer {
