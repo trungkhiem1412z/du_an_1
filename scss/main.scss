@@ -20,6 +20,24 @@
                 display: none;
             }
 
+            .navbar-collapse-2 {
+                .navbar-nav {
+                    .muti-nav {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        width: 100%;
+                        justify-content: space-evenly;
+
+                        .box-1,
+                        .box-2 {
+                            width: 48%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
             // chỉnh đường viên navbar-toggler
             .navbar-toggler {
                 box-shadow: none;

@@ -11915,6 +11915,23 @@ textarea.form-control-lg {
 .header .navbar .container-fluid .navbar-collapse-1, .header .navbar .container-sm .navbar-collapse-1, .header .navbar .container-md .navbar-collapse-1, .header .navbar .container-lg .navbar-collapse-1, .header .navbar .container-xl .navbar-collapse-1, .header .navbar .container-xxl .navbar-collapse-1 {
   display: none;
 }
+.header .navbar .container-fluid .navbar-collapse-2 .navbar-nav .muti-nav, .header .navbar .container-sm .navbar-collapse-2 .navbar-nav .muti-nav, .header .navbar .container-md .navbar-collapse-2 .navbar-nav .muti-nav, .header .navbar .container-lg .navbar-collapse-2 .navbar-nav .muti-nav, .header .navbar .container-xl .navbar-collapse-2 .navbar-nav .muti-nav, .header .navbar .container-xxl .navbar-collapse-2 .navbar-nav .muti-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.header .navbar .container-fluid .navbar-collapse-2 .navbar-nav .muti-nav .box-1, .header .navbar .container-sm .navbar-collapse-2 .navbar-nav .muti-nav .box-1, .header .navbar .container-md .navbar-collapse-2 .navbar-nav .muti-nav .box-1, .header .navbar .container-lg .navbar-collapse-2 .navbar-nav .muti-nav .box-1, .header .navbar .container-xl .navbar-collapse-2 .navbar-nav .muti-nav .box-1, .header .navbar .container-xxl .navbar-collapse-2 .navbar-nav .muti-nav .box-1,
+.header .navbar .container-fluid .navbar-collapse-2 .navbar-nav .muti-nav .box-2,
+.header .navbar .container-sm .navbar-collapse-2 .navbar-nav .muti-nav .box-2,
+.header .navbar .container-md .navbar-collapse-2 .navbar-nav .muti-nav .box-2,
+.header .navbar .container-lg .navbar-collapse-2 .navbar-nav .muti-nav .box-2,
+.header .navbar .container-xl .navbar-collapse-2 .navbar-nav .muti-nav .box-2,
+.header .navbar .container-xxl .navbar-collapse-2 .navbar-nav .muti-nav .box-2 {
+  width: 48%;
+  text-align: center;
+}
 .header .navbar .container-fluid .navbar-toggler, .header .navbar .container-sm .navbar-toggler, .header .navbar .container-md .navbar-toggler, .header .navbar .container-lg .navbar-toggler, .header .navbar .container-xl .navbar-toggler, .header .navbar .container-xxl .navbar-toggler {
   box-shadow: none;
   border: none;
