@@ -11997,6 +11997,9 @@ textarea.form-control-lg {
 .content .car-ed .row .box-item .card:hover .card-body a:before {
   border-top: 2px solid #27ba7a;
 }
+.content .car-ed .row .box-item .card-body {
+  max-height: 100%;
+}
 .content .car-ed .row .box-item .card-body .card-title {
   font-weight: 600;
 }
@@ -12353,6 +12356,9 @@ textarea.form-control-lg {
   border: 1px solid #6F777C;
   border-radius: 0.4rem;
 }
+.content .blog-news .blog-post .card .content-post .test-img-1 img {
+  height: 310px;
+}
 .content .blog-news .blog-post .card .content-post .card-body .card-body-info {
   border-top: 1px solid #e5e6e6;
   padding-top: 15px;
@@ -12364,6 +12370,11 @@ textarea.form-control-lg {
   color: #16b26e !important;
   font-size: 0.8rem !important;
 }
+@media (min-width: 576px) {
+  .content .blog-news .blog-post .card .content-post .test-img-1 img {
+    height: 204px;
+  }
+}
 @media (min-width: 768px) {
   .content .blog-news .blog-post {
     justify-content: space-evenly;
@@ -12371,119 +12382,73 @@ textarea.form-control-lg {
   .content .blog-news .blog-post .card {
     width: 32%;
   }
+  .content .blog-news .blog-post .card .content-post .test-img-1 img {
+    height: 174px;
+  }
 }
 @media (min-width: 992px) {
-  .content .blog-news .blog-post .card img {
-    height: auto;
+  .content .blog-news .blog-post .card .content-post .test-img-1 img {
+    height: 242.55px;
   }
 }
 .content .subscrible {
   margin-top: 1rem;
 }
-.content .subscrible .test {
-  flex-direction: column;
+.content .subscrible .sub-content-g .thumb-img {
+  display: none;
 }
-.content .subscrible .test .thumb-img img {
+.content .subscrible .sub-content-g .sub-content {
   width: 100%;
-  border-radius: 1.5rem;
-}
-.content .subscrible .btn-k {
-  background-color: #46BE7E;
-  border-radius: 1.3rem;
-  border: 1px solid #46BE7E;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: center;
 }
-.content .subscrible .btn-k ::-moz-placeholder {
+.content .subscrible .sub-content-g .sub-content h2, .content .subscrible .sub-content-g .sub-content .h2 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.content .subscrible .sub-content-g .sub-content .btn-content {
+  display: flex;
+  border-radius: 1rem;
+  align-items: center;
+  border: 1px solid #16b26e;
+}
+.content .subscrible .sub-content-g .sub-content .btn-content .input-email {
+  width: 70%;
+}
+.content .subscrible .sub-content-g .sub-content .btn-content .input-email input[type=email] {
+  width: 100%;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   color: #fff;
+  background-color: #16b26e;
 }
-.content .subscrible .btn-k :-ms-input-placeholder {
-  color: #fff;
-}
-.content .subscrible .btn-k ::placeholder {
-  color: #fff;
-}
-.content .subscrible .btn-k input[type=email]:focus {
+.content .subscrible .sub-content-g .sub-content .btn-content .input-email input[type=email]:focus {
+  box-shadow: none;
+  border: none;
   outline: none;
-  border: none;
 }
-.content .subscrible .btn-k input[type=email] {
-  border: none;
-  outline: none;
-  padding: 1rem 0.5rem 1rem 1rem;
-  color: #fff;
-  background-color: #46BE7E;
-  border-radius: 1.3rem;
+.content .subscrible .sub-content-g .sub-content .btn-content .input-button {
+  width: 30%;
+  height: 100%;
+  background-color: #16b26e;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
-.content .subscrible .btn-k .btn {
-  color: #fff;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
+.content .subscrible .sub-content-g .sub-content .btn-content .input-button .btn {
+  width: 100%;
   border: none;
-  border-top-right-radius: 1.3rem;
-  border-bottom-right-radius: 1.3rem;
+  color: #fff;
   transition: all 0.5s ease-in-out;
 }
-.content .subscrible .btn-k .btn:hover {
-  border: none;
-  outline: none;
-  color: #46BE7E;
+.content .subscrible .sub-content-g .sub-content .btn-content .input-button:hover {
   background-color: #fff;
 }
-@media (min-width: 576px) {
-  .content .subscrible .test .thumb-img {
-    display: none;
-  }
-  .content .subscrible .test .sub-content {
-    text-align: center;
-  }
-  .content .subscrible .test .sub-content .btn-k {
-    width: 356px;
-  }
-}
-@media (min-width: 768px) {
-  .content .subscrible .test {
-    flex-direction: row;
-    justify-content: center;
-  }
-  .content .subscrible .test .thumb-img {
-    text-align: center;
-    display: block;
-  }
-  .content .subscrible .test .thumb-img img {
-    width: 90%;
-  }
-  .content .subscrible .test .btn-k {
-    width: 356px;
-    position: relative;
-  }
-  .content .subscrible .test .btn-k input[type=email] {
-    width: 249.367px;
-  }
-  .content .subscrible .test .sub-content {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .content .subscrible .test .sub-content h2, .content .subscrible .test .sub-content .h2 {
-    margin-bottom: 0;
-  }
-}
-@media (min-width: 992px) {
-  .content .subscrible .test {
-    width: 70%;
-    margin: auto;
-  }
-  .content .subscrible .test .sub-content {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .content .subscrible .test .sub-content h2, .content .subscrible .test .sub-content .h2 {
-    margin-bottom: 0;
-  }
+.content .subscrible .sub-content-g .sub-content .btn-content .input-button:hover .btn {
+  color: #16b26e;
 }
 .footer {
   color: #fff;

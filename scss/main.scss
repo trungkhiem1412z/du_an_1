@@ -145,6 +145,8 @@
                 }
 
                 .card-body {
+                    max-height: 100%;
+
                     .card-title {
                         font-weight: 600;
                     }
@@ -605,6 +607,12 @@
                     // border-top: 0;
                     border-radius: 0.4rem;
 
+                    .test-img-1 {
+                        img {
+                            height: 310px;
+                        }
+                    }
+
                     .card-body {
                         .card-body-info {
                             border-top: 1px solid #e5e6e6;
@@ -625,12 +633,34 @@
             }
         }
 
+        @include media-breakpoint-up(sm) {
+            .blog-post {
+                .card {
+                    .content-post {
+                        .test-img-1 {
+                            img {
+                                height: 204px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         @include media-breakpoint-up(md) {
             .blog-post {
                 justify-content: space-evenly;
 
                 .card {
                     width: 32%;
+
+                    .content-post {
+                        .test-img-1 {
+                            img {
+                                height: 174px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -638,8 +668,12 @@
         @include media-breakpoint-up(lg) {
             .blog-post {
                 .card {
-                    img {
-                        height: auto;
+                    .content-post {
+                        .test-img-1 {
+                            img {
+                                height: 242.55px;
+                            }
+                        }
                     }
                 }
             }
@@ -650,130 +684,82 @@
     .subscrible {
         margin-top: 1rem;
 
-        .test {
-            flex-direction: column;
+        .sub-content-g {
 
+            // img thumbnail
             .thumb-img {
-                img {
-                    width: 100%;
-                    border-radius: 1.5rem;
-                }
-            }
-        }
-
-
-        .btn-k {
-            background-color: #46BE7E;
-            border-radius: 1.3rem;
-            border: 1px solid #46BE7E;
-            display: flex;
-            flex-direction: row;
-
-            ::placeholder {
-                color: #fff;
+                display: none;
             }
 
-            input[type=email]:focus {
-                outline: none;
-                border: none;
-            }
+            .sub-content {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+                text-align: center;
 
-            input[type=email] {
-                border: none;
-                outline: none;
-                padding: 1rem 0.5rem 1rem 1rem;
-                color: #fff;
-                background-color: #46BE7E;
-                border-radius: 1.3rem;
-            }
-
-            .btn {
-                color: #fff;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                border: none;
-                border-top-right-radius: 1.3rem;
-                border-bottom-right-radius: 1.3rem;
-                transition: all 0.5s ease-in-out;
-            }
-
-            .btn:hover {
-                border: none;
-                outline: none;
-                color: #46BE7E;
-                background-color: #fff;
-            }
-        }
-
-        @include media-breakpoint-up(sm) {
-            .test {
-                .thumb-img {
-                    display: none;
+                h2 {
+                    font-weight: 600;
+                    margin-bottom: 0;
                 }
 
-                .sub-content {
-                    text-align: center;
-
-                    .btn-k {
-                        width: 356px;
-                    }
-                }
-            }
-        }
-
-        @include media-breakpoint-up(md) {
-            .test {
-                flex-direction: row;
-                justify-content: center;
-
-                .thumb-img {
-                    text-align: center;
-                    display: block;
-
-                    img {
-                        width: 90%;
-                    }
-                }
-
-                .btn-k {
-                    width: 356px;
-                    position: relative;
-
-                    input[type=email] {
-                        width: 249.367px;
-                    }
-                }
-
-                .sub-content {
+                .btn-content {
                     display: flex;
-                    flex-direction: column;
-                    gap: 15px;
+                    border-radius: 1rem;
+                    align-items: center;
+                    border: 1px solid #16b26e;
 
-                    h2 {
-                        margin-bottom: 0;
+                    .input-email {
+                        width: 70%;
+
+                        input[type=email] {
+                            width: 100%;
+                            padding: 0.4rem 1rem;
+                            border: none;
+                            border-top-left-radius: 1rem;
+                            border-bottom-left-radius: 1rem;
+                            color: #fff;
+                            background-color: #16b26e;
+                        }
+
+                        input[type=email]:focus {
+                            box-shadow: none;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+
+                    .input-button {
+                        width: 30%;
+                        height: 100%;
+                        background-color: #16b26e;
+                        border-top-right-radius: 1rem;
+                        border-bottom-right-radius: 1rem;
+
+                        .btn {
+                            width: 100%;
+                            border: none;
+                            color: #fff;
+                            transition: all 0.5s ease-in-out;
+                        }
+
+                        &:hover {
+                            .btn {
+                                color: #16b26e;
+                            }
+
+                            background-color: #fff;
+                        }
                     }
                 }
             }
         }
 
-        @include media-breakpoint-up(lg) {
-            .test {
-                width: 70%;
-                margin: auto;
+        @include media-breakpoint-up(sm) {}
 
-                .sub-content {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
+        @include media-breakpoint-up(md) {}
 
-                    h2 {
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
+        @include media-breakpoint-up(lg) {}
     }
 
     // support
