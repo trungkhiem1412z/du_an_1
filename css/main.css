@@ -12413,6 +12413,8 @@ textarea.form-control-lg {
   border-radius: 1rem;
   align-items: center;
   border: 1px solid #16b26e;
+  width: 70%;
+  margin: 0 auto;
 }
 .content .subscrible .sub-content-g .sub-content .btn-content .input-email {
   width: 70%;
