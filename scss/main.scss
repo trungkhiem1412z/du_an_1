@@ -757,15 +757,40 @@
             }
         }
 
-        @include media-breakpoint-up(sm) {}
+        @include media-breakpoint-up(md) {
+            .sub-content-g {
+                display: flex;
+                flex-direction: row;
 
-        @include media-breakpoint-up(md) {}
+                // img thumbnail
+                .thumb-img {
+                    display: block;
+                    width: 50%;
 
-        @include media-breakpoint-up(lg) {}
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .sub-content {
+                    width: 50%;
+
+                    .btn-content {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            .sub-content-g {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
     }
 
     // support
-    .support {}
 
 }
 
