@@ -1,4 +1,22 @@
-<header class="header fixed-top">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="http://localhost/public/images/logo.png">
+    <title>Trang Chủ</title>
+    <base href="http://localhost/">
+    <link rel="stylesheet" type="text/css" href="http://localhost/public/css/main.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/public/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/public/css/slick-theme.css">
+    <!-- Boostrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header class="header fixed-top">
         <!-- Top header -->
         <div class="top-header d-none d-lg-block">
             <div class="d-flex justify-content-between p-2 bg-success text-white text-uppercase">
@@ -41,7 +59,7 @@
                 </div>
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
-                    <img src="images/logo-b.png" alt="">
+                    <img src="http://localhost/public/images/logo-b.png" alt="">
                 </a>
                 <!-- Navbar right -->
                 <div class="navbar-right">
@@ -71,9 +89,7 @@
                         <li class="nav-item">
                             <a tabindex="0" class="nav-link fs-4" href="#" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" title="Popover title" data-bs-content="Here's some amazing content.">
                                 <i class="bi bi-cart position-relative">
-                                    <span
-                                        class="position-absolute bottom-0 start-100 translate-middle badge rounded-pill bg-black fw-normal"
-                                        style="font-size: 10px;">
+                                    <span class="position-absolute bottom-0 start-100 translate-middle badge rounded-pill bg-black fw-normal" style="font-size: 10px;">
                                         1
                                     </span>
                                 </i>

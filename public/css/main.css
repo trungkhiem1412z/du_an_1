@@ -11030,6 +11030,7 @@ textarea.form-control-lg {
   color: #27ba7a;
 }
 .content .best-sellers .tabs-k .nav-pills-k .nav-link.active {
+  width: 100px;
   background-color: #27ba7a;
   color: #fff;
   transition: all 0.5s ease-in-out;
@@ -11204,8 +11205,10 @@ textarea.form-control-lg {
 }
 .content .slick-app {
   margin: 1rem 0;
+  /* display: flex; */
 }
 .content .slick-app .item {
+  /* width: 20%; */
   display: flex;
   flex-direction: column;
   text-align: center;
