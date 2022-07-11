@@ -1,4 +1,4 @@
-<?php include 'body/header.php' ?>
+<?php require_once 'body/header.php' ?>
 <!-- content -->
 <div class="container-fluid p-0 content">
     <!-- images carousel -->
@@ -604,4 +604,4 @@
 
 </div>
 
-<?php include 'body/footer.php' ?>
+<?php require_once 'body/footer.php' ?>
